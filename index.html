@@ -5,43 +5,40 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lucky Beauty — Wigs & Hair</title>
 <style>
-:root{--ink:#171313;--muted:#6d6464;--cream:#fbf8f6;--pink:#ead7d7;--line:#e8dfdc}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white}
+:root{--ink:#171313;--muted:#6d6464;--cream:#fbf8f6;--line:#e8dfdc}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
 .top{background:#171313;color:#fff;text-align:center;padding:10px;font-size:13px;letter-spacing:.08em}
 nav{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;background:#fff;z-index:5}
 .logo{font-family:Georgia,serif;font-size:28px;letter-spacing:.04em}.links{display:flex;gap:28px;font-size:14px}.links a{color:#171313;text-decoration:none}
 .hero{background:linear-gradient(120deg,#f5e8e7,#fff);padding:70px 7%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .hero h1{font:56px Georgia,serif;line-height:1.03;margin:0 0 18px}.hero p{color:var(--muted);font-size:17px;line-height:1.7;max-width:520px}
-.btn{display:inline-block;background:#171313;color:white;text-decoration:none;padding:15px 24px;margin-top:14px;border-radius:2px}
-.hero-art{min-height:410px;border-radius:4px;background:radial-gradient(circle at 50% 38%,#5a463f 0 18%,transparent 19%),radial-gradient(ellipse at 50% 55%,#231b1a 0 31%,transparent 32%),linear-gradient(145deg,#ead5d5,#f8eeee);display:flex;align-items:end;justify-content:center;padding-bottom:45px;color:#fff;letter-spacing:.2em}
+.btn,.buy{display:inline-block;background:#171313;color:#fff;text-decoration:none;padding:13px 20px;margin-top:14px;border-radius:2px}
+.hero-art{min-height:410px;border-radius:4px;background:linear-gradient(145deg,#ead5d5,#f8eeee);display:flex;align-items:center;justify-content:center;color:#3c2b29;font:34px Georgia,serif;letter-spacing:.15em}
 .section{padding:55px 6%}.section h2{text-align:center;font:36px Georgia,serif;margin:0 0 10px}.sub{text-align:center;color:var(--muted);margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{border:1px solid var(--line);background:#fff}.pic{aspect-ratio:1/1.12;background:linear-gradient(145deg,#f1e3e0,#d6c1bd);display:flex;align-items:end;justify-content:center;font:34px Georgia,serif;color:#3c2b29;padding-bottom:20px}.info{padding:16px}.name{font-size:15px;line-height:1.4}.price{margin-top:9px;font-weight:700}.old{color:#999;text-decoration:line-through;font-weight:400;margin-left:7px}.features{background:var(--cream);display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding:40px 6%;text-align:center}.features b{display:block;margin-bottom:8px}.features span{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{border:1px solid var(--line);background:#fff;overflow:hidden}.pic{width:100%;aspect-ratio:1/1.12;object-fit:cover;display:block;background:#eee}.info{padding:16px}.name{font-size:15px;line-height:1.4;min-height:42px}.price{margin-top:9px;font-weight:700}.buy{font-size:12px;padding:10px 13px}
+.features{background:var(--cream);display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding:40px 6%;text-align:center}.features b{display:block;margin-bottom:8px}.features span{color:var(--muted);font-size:14px}
 .news{padding:55px 6%;text-align:center}.news input{width:min(420px,80%);padding:14px;border:1px solid #ccc}.news button{padding:15px 22px;border:0;background:#171313;color:#fff}
 footer{background:#171313;color:#fff;padding:40px 6%;display:flex;justify-content:space-between}.muted{color:#bdb4b4}
-@media(max-width:800px){.links{gap:12px}.hero{grid-template-columns:1fr;padding:45px 6%}.hero h1{font-size:42px}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}footer{display:block}}
-@media(max-width:480px){.logo{font-size:23px}.links a:nth-child(2){display:none}.grid{grid-template-columns:1fr}}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr}}
+@media(max-width:480px){.logo{font-size:23px}.links{gap:12px}.links a:nth-child(2){display:none}.grid{grid-template-columns:1fr}.hero h1{font-size:42px}}
 </style>
 </head>
 <body>
-<div class="top">NEW SEASON • ELEVATED WIG STYLES • SHOP LUCKY BEAUTY</div>
-<nav><div class="logo">Lucky Beauty</div><div class="links"><a href="#">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#cart">Cart (0)</a></div></nav>
-
-<section class="hero">
-<div><h1>Find your signature look.</h1><p>Discover stylish wigs designed to make every look feel effortless. Explore soft curls, sleek lengths and everyday-ready styles from Lucky Beauty.</p><a class="btn" href="#shop">SHOP WIGS</a></div>
-<div class="hero-art">LUCKY BEAUTY</div>
-</section>
-
-<section class="section" id="shop"><h2>Featured Wigs</h2><div class="sub">New styles selected for your next look.</div>
-<div class="grid">
-<div class="card"><div class="pic">Curly</div><div class="info"><div class="name">Lace Front Curly Wig</div><div class="price">$79.99</div></div></div>
-<div class="card"><div class="pic">Silky</div><div class="info"><div class="name">Long Straight Lace Wig</div><div class="price">$89.99 <span class="old">$109.99</span></div></div></div>
-<div class="card"><div class="pic">Wave</div><div class="info"><div class="name">Soft Body Wave Wig</div><div class="price">$84.99</div></div></div>
-<div class="card"><div class="pic">Bob</div><div class="info"><div class="name">Elegant Short Bob Wig</div><div class="price">$69.99</div></div></div>
-</div></section>
-
-<section class="features"><div><b>Quality Styles</b><span>Curated wig designs for different looks.</span></div><div><b>Secure Checkout</b><span>Connect your approved card gateway and PayPal.</span></div><div><b>Customer Support</b><span>We're here to help with your order.</span></div></section>
-
-<section class="news" id="contact"><h2>Stay in the loop</h2><p class="muted">Get updates about new wig drops and offers.</p><input placeholder="Your email address"><button>SUBSCRIBE</button></section>
+<div class="top">NEW SEASON • WIG COLLECTION • SHOP LUCKY BEAUTY</div>
+<nav><div class="logo">Lucky Beauty</div><div class="links"><a href="#">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#shop">Products</a></div></nav>
+<section class="hero"><div><h1>Find your signature look.</h1><p>Discover stylish wigs designed to make every look feel effortless. Explore curls, waves, sleek lengths and everyday-ready styles from Lucky Beauty.</p><a class="btn" href="#shop">SHOP WIGS</a></div><div class="hero-art">LUCKY BEAUTY</div></section>
+<section class="section" id="shop"><h2>Our Wig Collection</h2><div class="sub">Choose your favorite style and contact us to place an order.</div><div class="grid"><div class="card"><img class="pic" src="wig1.jpg" alt="Luxury Body Wave Lace Wig" loading="lazy"><div class="info"><div class="name">Luxury Body Wave Lace Wig</div><div class="price">$89.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig2.jpg" alt="Long Deep Curly Lace Wig" loading="lazy"><div class="info"><div class="name">Long Deep Curly Lace Wig</div><div class="price">$94.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig3.jpg" alt="Extra Long Natural Wave Wig" loading="lazy"><div class="info"><div class="name">Extra Long Natural Wave Wig</div><div class="price">$99.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig4.jpg" alt="Straight HD Lace Front Wig" loading="lazy"><div class="info"><div class="name">Straight HD Lace Front Wig</div><div class="price">$89.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig5.jpg" alt="Classic Body Wave Wig" loading="lazy"><div class="info"><div class="name">Classic Body Wave Wig</div><div class="price">$84.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig6.jpg" alt="Long Black Wavy Wig" loading="lazy"><div class="info"><div class="name">Long Black Wavy Wig</div><div class="price">$89.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig7.jpg" alt="13x4 Curly Lace Wig" loading="lazy"><div class="info"><div class="name">13x4 Curly Lace Wig</div><div class="price">$104.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig8.jpg" alt="Long Bangs Wavy Wig" loading="lazy"><div class="info"><div class="name">Long Bangs Wavy Wig</div><div class="price">$79.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig9.jpg" alt="Long Blonde Wave Wig" loading="lazy"><div class="info"><div class="name">Long Blonde Wave Wig</div><div class="price">$109.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div>
+<div class="card"><img class="pic" src="wig10.jpg" alt="Natural Black Body Wave Wig" loading="lazy"><div class="info"><div class="name">Natural Black Body Wave Wig</div><div class="price">$89.99</div><a class="buy" href="#contact">VIEW / ORDER</a></div></div></div></section>
+<section class="features"><div><b>Quality Styles</b><span>Curated wig designs for different looks.</span></div><div><b>Secure Checkout</b><span>Live card and PayPal checkout can be connected through an approved payment provider.</span></div><div><b>Customer Support</b><span>We're here to help with your order.</span></div></section>
+<section class="news" id="contact"><h2>Contact Lucky Beauty</h2><p class="muted">For orders, sizes, colors and availability, contact your store support.</p><input placeholder="Your email address"><button>CONTACT</button></section>
 <footer id="about"><div><div class="logo">Lucky Beauty</div><p class="muted">Wigs & hair styles for every mood.</p></div><div class="muted">© 2026 Lucky Beauty</div></footer>
 </body>
 </html>
